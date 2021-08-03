@@ -1,0 +1,133 @@
+/*
+ * 字体样式
+ */
+
+$zh-cn: 'zh';           // 简体中文
+$en-us: 'en';           // 英语
+$ko-kr: 'kr';           // 韩语
+$ru-ru: 'ru';           // 俄语
+$vi: 'vi';
+$tr-TR: 'tr';
+$ja: 'ja';
+$ar: 'ar';
+$bn: 'bn';
+$zh-hk: 'zh-hk';
+$kk: 'kk';
+
+body {
+  font-family: "Roboto","SF Pro SC","SF Pro Text","Helvetica Neue","Helvetica","Arial","PingFang SC","Microsoft YaHei", "微软雅黑", sans-serif;
+  [lang=#{$zh-cn}] &{
+    font-family: "Roboto","SF Pro SC","SF Pro Text","Helvetica Neue","Helvetica","Arial","PingFang SC","Microsoft YaHei", "微软雅黑", sans-serif;
+  }
+
+  [data-lang=#{$en-us}] &{
+    font-family: "Roboto","SF Pro Text","Helvetica Neue","Helvetica","Arial",sans-serif;
+  }
+
+  [lang=#{$ko-kr}] &{
+    font-family: "Roboto","SF Pro KR","SF Pro Text","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif
+  }
+
+}
+
+@for $i from 0 through 20 {
+  .mg-t#{$i * 4} {
+    margin-top: #{$i * 4}px!important;
+  }
+  .mg-b#{$i * 4} {
+    margin-bottom: #{$i * 4}px!important;
+  }
+  .mg-l#{$i * 4} {
+    margin-left: #{$i * 4}px!important;
+  }
+  .mg-r#{$i * 4} {
+    margin-right: #{$i * 4}px!important;
+  }
+
+  .pd-t#{$i * 4} {
+    padding-top: #{$i * 4}px!important;
+  }
+  .pd-b#{$i * 4} {
+    padding-bottom: #{$i * 4}px!important;
+  }
+  .pd-l#{$i * 4} {
+    padding-left: #{$i * 4}px!important;
+  }
+  .pd-r#{$i * 4} {
+    padding-right: #{$i * 4}px!important;
+  }
+
+  .mg-tb#{$i * 4} {
+    margin-top: #{$i * 4}px!important;
+    margin-bottom: #{$i * 4}px!important;
+  }
+  .mg-lr#{$i * 4} {
+    margin-left: #{$i * 4}px!important;
+    margin-right: #{$i * 4}px!important;
+  }
+
+  .pd-tb#{$i * 4} {
+    padding-top: #{$i * 4}px!important;
+    padding-bottom: #{$i * 4}px!important;
+  }
+  .pd-lr#{$i * 4} {
+    padding-left: #{$i * 4}px!important;
+    padding-right: #{$i * 4}px!important;
+  }
+}
+
+@for $i from 0 through 35 {
+  .ts-#{10 + $i * 2} {
+    font-size: #{10 + $i * 2}px!important;
+  }
+}
+
+@for $i from 0 to 10 {
+  .opacity-#{$i} {
+    opacity: #{$i / 10};
+  }
+  .tw-#{$i} {
+    font-weight: #{$i * 100};
+  }
+}
+
+.tw-b {
+  font-weight: bold;
+}
+
+.tw-n {
+  font-weight: normal;
+}
+
+.mg-l-auto {
+  margin-left: auto;
+}
+.mg-r-auto {
+  margin-right: auto;
+}
+
+.mg-t-auto {
+  margin-top: auto;
+}
+.mg-r14{
+  margin-right:14px;
+}
+
+.ts-12 {
+  line-height: 16px;
+}
+.ts-14 {
+  line-height: 20px;
+}
+.ts-20 {
+  line-height: 24px;
+}
+.ts-24 {
+  line-height: 32px;
+}
+.ts-32 {
+  line-height: 48px;
+}
+.ts-48 {
+  line-height: 64px;
+}

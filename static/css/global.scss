@@ -1,0 +1,224 @@
+/*
+ * 全局样式
+ */
+
+
+/*默认边距*/
+body,
+p,
+span,
+div,
+img,
+i,
+ul,
+li,
+strong,
+input {
+  margin: 0;
+  padding: 0;
+}
+body{
+  min-width: 1346px;
+}
+/*自动换行*/
+p,
+span,
+div,
+strong,
+i,
+ul li {
+  word-break: break-all;
+  // color: #333333;
+}
+
+/*图片撑满*/
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*识别换行符*/
+.pre-text {
+  white-space: pre-wrap
+}
+
+/*去掉li的点*/
+ul li {
+  list-style: none;
+}
+
+/*鼠标变手型*/
+.pointer {
+  cursor: pointer;
+}
+
+/*字体样式*/
+p,
+span,
+div,
+a,
+strong,
+i {
+  font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial;
+}
+
+/*去掉a标签的下划线*/
+a {
+  text-decoration: none;
+}
+
+.max-w {
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.min-w {
+  min-width: 1248px;
+}
+
+.exchange-min-w {
+  min-width: 1280px;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.height-full {
+  width: 100%;
+}
+
+.cursor-pointer,
+.cursor {
+  cursor: pointer;
+}
+
+.cursor-disable {
+  cursor: not-allowed !important;
+}
+
+.color-light {
+  color: #fff;
+}
+
+.flex-box {
+  display: flex;
+  align-items: center;
+
+  &.inline {
+    display: inline-flex;
+  }
+
+  &.space-center {
+    justify-content: center;
+  }
+
+  &.space-start {
+    justify-content: flex-start;
+  }
+
+  &.space-end {
+    justify-content: flex-end;
+  }
+
+  &.space-between {
+    justify-content: space-between;
+  }
+
+  &.space-around {
+    justify-content: space-around;
+  }
+
+  &.align-start {
+    align-items: flex-start;
+  }
+
+  &.align-end {
+    align-items: flex-end;
+  }
+
+  &.align-baseline {
+    align-items: baseline;
+  }
+
+  &.flex-column {
+    flex-direction: column;
+  }
+
+  &.flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  @for $i from 1 through 9 {
+    .flex-#{$i} {
+      flex: #{$i};
+    }
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.break-all {
+  word-break: break-all;
+}
+
+.relative {
+  position: relative;
+}
+
+.ellipsis-single {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.text-overflow2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  max-height: 40px;
+  margin: 0;
+}
+
+
+@keyframes loading-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.body-lock {
+  overflow: hidden;
+}
+
+.marginNo {
+  margin: 0;
+}
+
+i{
+  font-style: normal;
+}
+u{
+  text-decoration: none;
+}
