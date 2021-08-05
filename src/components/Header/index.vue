@@ -91,7 +91,6 @@ export default {
     CloseNav () {
       this.$store.dispatch('Comment/increment', {
         name: this.NavShow = !this.NavShow
-
       })
     }
   },
@@ -104,7 +103,7 @@ export default {
 </script>
 <style scoped>
 .header {
-  height: 45px;
+  height: 5%;
   background: black;
   display: flex;
   justify-content: space-between;

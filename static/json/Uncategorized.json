@@ -1,0 +1,22 @@
+[
+    {
+        "title":"可口可乐加冰",
+        "id":"0",
+        "Specify":"",
+        "price":"6.00",
+        "Subtotal":"6.00",
+        "imgsrc":"../../static/images/coco/coco1.jpg",
+        "coding":"02200000059",
+        "count":"1"
+    },
+    {
+        "title":"狗都不喝加冰",
+        "id":"1",
+        "Specify":"",
+        "price":"7.00",
+        "Subtotal":"7.00",
+        "imgsrc":"../../static/images/coco/coco1.jpg",
+        "coding":"02200000060",
+        "count":"1"
+    }
+]

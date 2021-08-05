@@ -68,7 +68,7 @@ export default {
 </script>
 <style scoped>
 .box{
-    height: 100%;
+    height: 95%;
     display: flex;
 }
 .leftNavigation{
